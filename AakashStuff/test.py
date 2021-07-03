@@ -22,3 +22,5 @@ while (True):
 vid.release()
 # Destroy all the windows
 cv2.destroyAllWindows()
+# python detector.py --model D:\Users\Aakash\Documents\Programming\Python\Projects\TheTrashCycle\AakashStuff\TACO\detector\models\logs\ --dataset D:\Users\Aakash\Documents\Programming\Python\Projects\TheTrashCycle\AakashStuff\TACO\data --round 0 --class_map D:\Users\Aakash\Documents\Programming\Python\Projects\TheTrashCycle\AakashStuff\TACO\detector\taco_config\map_1.csv test
+# python detector.py --model mask_rcnn_taco_0100.h5 --dataset D:\Users\Aakash\Documents\Programming\Python\Projects\TheTrashCycle\AakashStuff\TACO\data --round 0 --class_map D:\Users\Aakash\Documents\Programming\Python\Projects\TheTrashCycle\AakashStuff\TACO\detector\taco_config\map_1.csv test
