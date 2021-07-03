@@ -1,14 +1,41 @@
 {% extends 'main/header.html' %}
 {% block content %}
 {% load static %}
-<br>
 <style>
-    body{
+    body {
         background-color: #87CEEB;
     }
 </style>
+
 <div style="justify-content: center; display: flex">
-    <br>
-    <br>
+    <div id="intro" class="card" style="width:100%">
+        <div class="container">
+            <h1 id="textbeforestat" style="font-family: boldflow;">
+                Classify garbage and learn how it decomposes over time
+            </h1>
+            <!-- <div style="width: 30%;"> -->
+            <div id="chart">
+                <div class="row">
+                    <div class="column">
+                        <h2 style="text-align: left;">
+                            Easily learn about how you can help the environment and how your trash decomposes over time
+                        </h2>
+                        <br>
+                        <br>
+                        <button id="start"
+                                style="float: left; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 200px; margin-bottom: 30px;">
+                            Get
+                            Started
+                        </button>
+                        <button id="learnmore"
+                                style="float: left; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 200px;">Learn
+                            More
+                        </button>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
