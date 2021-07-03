@@ -1,7 +1,37 @@
 {% extends 'main/header.html' %}
 {% block content %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
+
+<head>
+	<meta charset="UTF-8">
+	<title>The Trash Cycle</title>
+	<!-- Compiled and minified CSS -->
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+	</script>
+	
+	<link rel="stylesheet" href="{% static 'main/css/index.css'%}">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+
+	</script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--link rel="shortcut icon" type="image/png" href="{% static 'favicon/favicon.ico' %}"/-->
+	<script>
+		$(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+	</script>
+</head>
+
+<body>
 <div style="justify-content: center; display: flex">
     <div id="intro">
         <div>
@@ -22,11 +52,11 @@
                             Get
                             Started
                         </button>
-                       <a href="/about"
+                       
                         <button id="learnmore" 
                                 style="float: left; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 200px;" >Learn More
                         </button>
-                    </a>
+                    
                     </div>
                     <div class="column"></div>
                 </div>
@@ -34,4 +64,5 @@
         </div>
     </div>
 </div>
+</body>
 {% endblock %}
