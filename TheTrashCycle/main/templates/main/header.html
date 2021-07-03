@@ -8,7 +8,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/index.css'%}">
@@ -21,21 +21,20 @@
     </script>
 </head>
 
-<body>
+<body class="powder_blue2">
 <div id="navbar">
-  <a href="/home">The Trash Cycle</a>
-  <a href="#textbeforestat">Get Started</a>
-  <div class="dropdown">
-    <a href="#contact" style="width:62px">Contact</a>
-    <div class="dropdown-content" style="margin-top: 49px;">
-      <a href="#" style="width:62px">Email</a>
-      <a href="#" style="width:62px">Github</a>
-      <a href="#">Youtube</a>
+    <a href="/home">The Trash Cycle</a>
+    <a href="#textbeforestat">Get Started</a>
+    <div class="dropdown">
+        <a href="#contact" style="width:62px">Contact</a>
+        <div class="dropdown-content" style="margin-top: 49px;">
+            <a href="#" style="width:62px">Email</a>
+            <a href="#" style="width:62px">Github</a>
+            <a href="#">Youtube</a>
+        </div>
     </div>
-  </div>
 </div>
 
-<br>
 <br>
 {% block content %}
 {% endblock %}
