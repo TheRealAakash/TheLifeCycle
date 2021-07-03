@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/index.css'%}">
-    <link rel="script" href="{% static 'main/js/index.js'%}">
+    <script src="{% static 'main/js/index.js'%}"></script>
     <!--link rel="shortcut icon" type="image/png" href="{% static 'favicon/favicon.ico' %}"/-->
     <script>
         $(document).ready(function () {
@@ -22,29 +22,21 @@
 </head>
 
 <body>
-<div class="navbar" style="width:100%">
-    <nav class="light-blue" style="padding:0px 15px; position: fixed;">
-        <div class="nav-wrapper">
-            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-                <i class="material-icons">menu</i>
-            </a>
-
-            <a href="/" class="brand-logo">The Trash Cycle</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/examples">Examples</a></li>
-            </ul>
-        </div>
-    </nav>
+<div id="navbar">
+  <a href="/home">The Trash Cycle</a>
+  <a href="#textbeforestat">Get Started</a>
+  <div class="dropdown">
+    <a href="#contact" style="width:62px">Contact</a>
+    <div class="dropdown-content" style="margin-top: 49px;">
+      <a href="#" style="width:62px">Email</a>
+      <a href="#" style="width:62px">Github</a>
+      <a href="#">Youtube</a>
+    </div>
+  </div>
 </div>
-<ul class="sidenav" id="mobile-nav">
-    <li><a href="/">Home</a></li>
-</ul>
 
 <br>
 <br>
-
 {% block content %}
 {% endblock %}
 </body>
