@@ -1,10 +1,9 @@
 
 body {
   margin: 0;
-  background-color: #c0e0de;
+  /*background-color: #c0e0de;*/
   font-family: Arial, Helvetica, sans-serif;
   width: auto;
-  max-width:1245px;
 }
 
 #steel_blue {
@@ -333,8 +332,9 @@ p {
 .dropdown-content {
 display: none;
 position: absolute;
-background-color: #f1f1f1;
-max-width: 100px;
+background-color: #4f7cac;
+/*max-width: 100px;*/
+width: 100%;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
 color: #000;
@@ -350,7 +350,7 @@ display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #94b4de;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
