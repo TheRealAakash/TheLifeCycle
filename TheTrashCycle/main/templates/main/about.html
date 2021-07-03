@@ -1,0 +1,68 @@
+
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>The Trash Cycle</title>
+	<!-- Compiled and minified CSS -->
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+	</script>
+	<link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+
+	</script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--link rel="shortcut icon" type="image/png" href="{% static 'favicon/favicon.ico' %}"/-->
+	<script>
+		$(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+	</script>
+</head>
+
+<body>
+
+
+<div>
+<section id="intro">
+<div>
+	<p class="about">About TheLifeCycle</p>
+	
+	<p>The purpose of this project is to develop a website that can distinguish between different types of garbage. 
+	
+	</p>
+	<p>
+	The website will then return basic information about this piece of trash, such as if it is recyclable and how long it would take to decompose in nature. 
+	</p>
+	
+	<p>
+	This will help users better understand how the trash they produce affects the world long after they throw it out.
+	</p>
+	
+</div>
+</section>
+</div>
+
+<section id='middle'>
+	<p class="about">About Us</p>
+	
+	<p>We are very good programmers. Definately</p>
+	<p>What do you doubt us?</p>
+	<p>Yea you probably should to be honest</p>
+	<p>piece of trash</p>
+</section>
+<br>
+<br>
+</body>
+
+
+{% endblock %}
