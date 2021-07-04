@@ -28,6 +28,7 @@ body {
 }
 
 #intro {
+  padding-top:30px;
   -webkit-animation: fadein 1.5s;
   padding:30px 60px 80px;
   margin-top:10px;
