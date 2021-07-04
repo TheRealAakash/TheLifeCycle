@@ -16,8 +16,8 @@ body {
   width: 95%;
   max-width:95%;
   padding-left:0%;
-  margin-left:5%;
- margin-right:5%;
+  margin-left:2.5%;
+ margin-right:2.5%;
   background: url('trash.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -28,6 +28,7 @@ body {
 }
 
 #intro {
+margin-top:30px;
   padding-top:30px;
   -webkit-animation: fadein 1.5s;
   padding:30px 60px 80px;
