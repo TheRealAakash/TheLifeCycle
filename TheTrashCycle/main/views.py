@@ -12,3 +12,6 @@ def aboutpage(request):
 
 def examplespage(request):
     return render(request=request, template_name="main/examples.html")
+
+def get_started(request):
+    return render(request=request, template_name="")
