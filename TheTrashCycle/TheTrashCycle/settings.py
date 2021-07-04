@@ -20,7 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'm8m865=+!f$0mjmnpuq&f9v9b@0bl6)&p#j%o!6b)6k$mecz1p'
+SECRET_KEY = open("/home/aakash/Documents/Projects/Python/TheTrashCycle/TheTrashCycle/TheTrashCycle/passwd.txt").read()
+# 'm8m865=+!f$0mjmnpuq&f9v9b@0bl6)&p#j%o!6b)6k$mecz1p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
