@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 
     # added
     'main.apps.MainConfig'
+    'main'
 ]
 
 MIDDLEWARE = [
