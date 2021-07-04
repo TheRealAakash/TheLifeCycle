@@ -84,7 +84,7 @@ body {
   bottom:10%;
   width: 2.5%;
   margin:auto;
-  
+  transform:translateX(50%) scale(0.2);
   
 }
 #middle {
