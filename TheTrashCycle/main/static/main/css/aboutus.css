@@ -27,13 +27,15 @@ body {
 }
 
 #intro {
-margin-top:30px;
-  padding-top:30px;
+
+  
   -webkit-animation: fadein 1.5s;
   padding:30px 60px 80px;
   margin-top:10px;
   background-color:#3B7FF6;
   width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius:10px;
   font-family: "Bahnschrift SemiBold";
   text-align:center;
