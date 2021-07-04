@@ -81,8 +81,9 @@ body {
 
 #scroll{
    position:absolute;
-  bottom:10%;
-  right:50%;
+  margin:auto;
+  transform:scale(.5);
+  
 }
 #middle {
   padding:15px 15px 25px;
