@@ -133,3 +133,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+#  uwsgi --emperor /home/aakash/miniconda3/envs/TheLifeCycle/vassals/ --uid www-data --gid www-data
