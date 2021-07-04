@@ -7,4 +7,5 @@ The purpose of this project is to develop a website that can distinguish between
 
 
 ## Citations
-> Down Arrow on Home Screen: https://media.giphy.com/media/UrzWDQ3VTiDU84R5dx/giphy.gif
+> Home Screen graphic: https://media.giphy.com/media/UrzWDQ3VTiDU84R5dx/giphy.gif
+> Cardboard Info: http://hwestequipment.com/4-reasons-why-its-so-bad-to-not-recycle-cardboard/#:~:text=It%20Increases%20the%20Amount%20of,is%20released%20into%20the%20atmosphere.
