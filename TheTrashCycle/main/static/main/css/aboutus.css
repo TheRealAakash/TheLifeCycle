@@ -44,7 +44,7 @@ body {
 }
 
 #intro {
-  -webkit-animation: fadein 1s;
+  -webkit-animation: fadein 1.5s;
   padding:30px 60px 80px;
   margin-top:10px;
   background-color:#3B7FF6;
@@ -61,10 +61,10 @@ body {
 }
 #middle {
 	
-	-webkit-animation: fadein 1s ;
+	-webkit-animation: fadein 1.5s ;
 
   padding:15px 15px 25px;
-   margin-top: 10px; 
+   margin-top: 5px; 
    border-radius:10px;
   background-color:#3B7FF6;
   /* (247, 247, 247) */
