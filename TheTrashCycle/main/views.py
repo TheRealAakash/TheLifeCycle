@@ -19,4 +19,9 @@ def get_started(request):
 
 
 def get_started_submit(request):
+    try:
+        image = request.POST['filename']
+
+    except (Exception):
+        return render(request=request, template_name="main/home.html")
     return render(request=request, template_name="main/home.html")
