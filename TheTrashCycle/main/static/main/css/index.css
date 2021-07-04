@@ -35,7 +35,7 @@ body {
 
 #navbar {
   background-color: #162521;
-  position: fixed;
+  position:absolute;
   top: 0;
   width: 100%;
   display: block;
@@ -65,6 +65,8 @@ body {
   font-family: "Bahnschrift SemiBold";
   text-align:left;
   font-weight: bold;
+  position:relative;
+
 }
 
 .intro2 {
@@ -77,6 +79,15 @@ body {
   font-weight: bold;
 }
 
+#scroll{
+   position:absolute;
+  bottom:10%;
+  width: 2.5%;
+  margin:auto;
+   left: 50%;
+  transform:translateX(-50%) scale(0.2);
+  
+}
 #middle {
   padding:15px 15px 25px;
   /* margin-top: 20px; */
@@ -370,3 +381,7 @@ display: block;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
