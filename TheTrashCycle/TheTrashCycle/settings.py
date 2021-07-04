@@ -10,8 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # added
-    'main.apps.MainConfig'
+   # 'main.apps.MainConfig',
+    'main'
 ]
 
 MIDDLEWARE = [
@@ -127,5 +128,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_ROOT = "main/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, '/static')]
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+STATICFILES_DIRS = (
+    os.path.join(SITE_ROOT, 'static/'),
+)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
