@@ -1,39 +1,16 @@
 {% extends 'main/header.html' %}
 {% block content %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-
-<head>
-	<meta charset="UTF-8">
-	<title>The Trash Cycle</title>
-	<!-- Compiled and minified CSS -->
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-
-	</script>
-	
-	<link rel="stylesheet" href="{% static 'main/css/index.css'%}">
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-
-	</script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!--link rel="shortcut icon" type="image/png" href="{% static 'favicon/favicon.ico' %}"/-->
-	<script>
-		$(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-	</script>
-</head>
 
 <body>
-<div style="justify-content: center; display: flex">
-    <div id="intro">
+<div style="justify-content: center;">
+    <div class="intro">
+        <div id="opening">
+            <img src="{% static 'graphics/trash.png'%}" alt="Image of Trash" style="width: 100%">
+
+        </div>
+    </div>
+    <div class="intro2">
         <div>
             <h1 id="textbeforestat" style="font-family: boldflow;">
                 Classify garbage and learn how it decomposes over time
