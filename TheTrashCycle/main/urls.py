@@ -16,6 +16,7 @@ Including another URLconf
 from django.urls import path
 from . import views
 from django.conf import settings
+from django.conf.urls import url
 
 app_name = "main"
 
@@ -23,5 +24,7 @@ urlpatterns = [
     path("", views.homepage, name="homepage"),
     path("home", views.homepage, name="homepage"),
     path("about", views.aboutpage, name="aboutpage"),
-    path("get-started", views.get_started, name="get-started")
+    path("get-started", views.get_started, name="get-started"),
+    path("submit", views.get_started_submit, name="get-started-submit")
 ]
+

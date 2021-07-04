@@ -12,7 +12,7 @@
     <h2 style="text-align:left; font-size:34px; color:ghostwhite;">
         Upload a File or Image
     </h2>
-    <form action="/action_page.php" style="position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <form action="/submit" method="post" style="position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);">
         <br>
         <br>
         <input type="file" accept="image/*" id="userImage" name="filename" onchange="readURL(this);" hidden>
@@ -36,7 +36,7 @@
         <br>
         <br>
         <br>
-        <input type="submit" id="submit_image" hidden>
+        <input type="submit" id="submit_image" value="Submit" hidden>
         <label for="submit_image">Submit</label>
     </form>
 </div>

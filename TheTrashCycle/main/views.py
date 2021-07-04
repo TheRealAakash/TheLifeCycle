@@ -13,5 +13,10 @@ def aboutpage(request):
 def examplespage(request):
     return render(request=request, template_name="main/examples.html")
 
+
 def get_started(request):
     return render(request=request, template_name="main/get-started.html")
+
+
+def get_started_submit(request):
+    return render(request=request, template_name="main/home.html")
