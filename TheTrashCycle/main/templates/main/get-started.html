@@ -2,8 +2,20 @@
 {% block content %}
 {% load static %}
 
-<body>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'static/css/getstarted.css'%}">
+</head>
 
-
+<body style="background-color: #94b4de">
+    <div class="card container" style="width:auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+        <h2 style="text-align:left; font-size:34px">
+            Upload a File or Image
+        </h2>
+        <form action="/action_page.php" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <input type="file" id="userImage" name="filename">
+            <br>
+            <input type="submit">
+        </form>
+    </div>
 </body>
 {% endblock %}
