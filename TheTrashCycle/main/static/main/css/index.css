@@ -81,8 +81,10 @@ body {
 
 #scroll{
    position:absolute;
+  bottom:10%;
+  width: 5%;
   margin:auto;
-  transform:scale(.5);
+  
   
 }
 #middle {
