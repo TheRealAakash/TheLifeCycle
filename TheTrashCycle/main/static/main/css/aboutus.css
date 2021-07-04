@@ -16,7 +16,8 @@ body {
   width: 95%;
   max-width:95%;
   padding-left:0%;
-  
+  margin-left:5%;
+ margin-right:5%;
   background: url('trash.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
