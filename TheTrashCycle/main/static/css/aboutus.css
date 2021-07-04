@@ -57,7 +57,7 @@ body {
 
 @-webkit-keyframes fadein {
     from { transform:scale(0.01); opacity:0;}
-    to   {  transform:scale(1);opacity 1; }
+    to   {  transform:scale(1);opacity:1; }
 }
 #middle {
 	
