@@ -1,1 +1,46 @@
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+<html lang="en">
 
+
+<head>
+
+	<link rel="stylesheet" href="{% static 'main/css/trash.css'%}">
+
+</head>
+
+<body >
+<section class="i">
+	<h1 id="cardboard">Cardboard</h1>
+</section>
+
+	<section class="content" >
+	<div class="split left image" >
+		<div id="mar">
+		<h2 id="imgcaption">Your Image</h2>
+		<img src="{% static 'graphics/trashWithLogo.png'%}" id="img">
+	</div>
+	</div>
+		<div class="split right">
+			<div id="explain" style="color:white; font-size:40px;">
+				<h2 style="color:white; font-size:40px;">
+					Recyclable ✔
+				</h2>
+
+				<h2 style="color:white; font-size:20px; margin-top:40px;">
+					Estimated Time to Decompose: ~ 5 Years
+
+				</h2>
+
+			<h2 style="color:white;font-size:20px; line-height:2;margin-top:50px;">
+				Cardboard produces Methane, a greenhouse gas as it breaks down. Thus, every bit of cardboard recycled prevents greenhouse gases escape into the atmosphere and limit global warming.
+			</h2>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+
+{% endblock %}

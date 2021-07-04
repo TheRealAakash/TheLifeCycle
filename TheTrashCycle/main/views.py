@@ -17,6 +17,10 @@ def examplespage(request):
 def get_started(request):
     return render(request=request, template_name="main/get-started.html")
 
+def cardboard(request):
+
+    return render(request=request,template_name='main/cardboard.html')
+
 
 def get_started_submit(request):
     try:
