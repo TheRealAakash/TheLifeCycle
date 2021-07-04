@@ -12,3 +12,11 @@ label {
   margin-left: 0.3rem;
   font-family: sans-serif;
 }
+
+#image-body {
+  background: url('trash.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

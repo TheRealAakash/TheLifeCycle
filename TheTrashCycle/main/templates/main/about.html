@@ -6,30 +6,17 @@
 
 
 <head>
-	<meta charset="UTF-8">
-	<title>The Trash Cycle</title>
-	<!-- Compiled and minified CSS -->
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-
-	</script>
+	
 	<link rel="stylesheet" href="{% static 'main/css/aboutus.css'%}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-
-	</script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!--link rel="shortcut icon" type="image/png" href="{% static 'favicon/favicon.ico' %}"/-->
-	<script>
-		$(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-	</script>
+	
 </head>
 
-<body>
-
+<body onload="scrollWin()">
+<script>
+function scrollWin() {
+  window.scrollTo(0, 0);
+}
+</script>
 
 <div>
 <section id="intro">
@@ -54,10 +41,9 @@
 <section id='middle'>
 	<p class="about">About Us</p>
 	
-	<p>We are very good programmers. Definately</p>
-	<p>What do you doubt us?</p>
-	<p>Yea you probably should to be honest</p>
-	<p>piece of trash</p>
+	<p>TheLifeCycle was developed during the <a href="https://bytekodehackathon.devpost.com/">ByteKode Hackathon 2021</a></p>
+	<p>We are a group of four teenagers from the San Francisco Bay Area. Our goal is to apply current technology, such as Artifical Intelligence, to combat challenges our current world.</p>
+
 </section>
 <br>
 <br>
