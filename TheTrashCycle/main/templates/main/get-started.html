@@ -3,19 +3,42 @@
 {% load static %}
 
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'static/css/getstarted.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/getstarted.css'%}">
 </head>
 
-<body style="background-color: #94b4de">
-    <div class="card container" style="width:auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-        <h2 style="text-align:left; font-size:34px">
-            Upload a File or Image
-        </h2>
-        <form action="/action_page.php" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <input type="file" id="userImage" name="filename">
-            <br>
-            <input type="submit">
-        </form>
-    </div>
+<body id="image-body">
+<div class="card container"
+     style="box-shadow: 0px 0px 5px #fff; width:auto; height:70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h2 style="text-align:left; font-size:34px; color:ghostwhite;">
+        Upload a File or Image
+    </h2>
+    <form action="/action_page.php" style="position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <br>
+        <br>
+        <input type="file" accept="image/*" id="userImage" name="filename" onchange="readURL(this);" hidden>
+        <label for="userImage">Choose file</label>
+        <br>
+        <br>
+        <img id="preview" style="max-width:80%; max-height: 80%; border-radius: 4px;">
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#preview').attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <input type="submit" id="submit_image" hidden>
+        <label for="submit_image">Submit</label>
+    </form>
+</div>
 </body>
 {% endblock %}
