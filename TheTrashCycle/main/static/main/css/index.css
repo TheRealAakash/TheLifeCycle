@@ -65,6 +65,8 @@ body {
   font-family: "Bahnschrift SemiBold";
   text-align:left;
   font-weight: bold;
+  position:relative;
+
 }
 
 .intro2 {
@@ -77,6 +79,11 @@ body {
   font-weight: bold;
 }
 
+#scroll{
+   position:absolute;
+  bottom:10%;
+  right:50%;
+}
 #middle {
   padding:15px 15px 25px;
   /* margin-top: 20px; */
@@ -370,3 +377,7 @@ display: block;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
