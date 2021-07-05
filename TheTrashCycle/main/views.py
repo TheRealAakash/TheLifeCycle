@@ -51,7 +51,7 @@ def get_started_submit(request):
         file_name = default_storage.save(file.name, file)
         file_url = default_storage.path(file_name)
 
-        return render(request=request, template_name="main/results.html", context={'file_name':file_name, 'file_path':file_url, 'garbage':[["Recyclable","plastic bag"]], 'decomp_time':{"plastic bag":"4040"},'explanation':{"plastic bag":"because yes"}})
+        return render(request=request, template_name="main/results.html", context={'file_name':file_name, 'file_path':file_url, 'garbage':["Recyclable","Organic"], 'decomp_time':{"Recyclable":"varies","Organic":"4 weeks - 12 months"})
     else:
         return render(request=request, template_name="main/get-started.html")
 
