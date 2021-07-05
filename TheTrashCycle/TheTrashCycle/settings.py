@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 from pathlib import Path
-import tensorflow as tf
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,10 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'm8m865=+!f$0mjmnpuq&f9v9b@0bl6)&p#j%o!6b)6k$mecz1p'
+# SECRET_KEY = open("/home/aakash/Documents/Projects/Python/TheTrashCycle/TheTrashCycle/TheTrashCycle/passwd.txt").read()
+SECRET_KEY = "m8m865=+!f$0mjmnpuq&f9v9b@0bl6)&p#j%o!6b)6k$mecz1p"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['thetrashcycle.ml', "thelifecycle.ml", "localhost", "192.168.1.3", "127.0.0.1", "www.thelifecycle.ml", "192.168.1.4", "73.71.159.154", "*"]
 
@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     # added
     'main.apps.MainConfig',
     # 'main'
-
-    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -135,3 +133,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+#  uwsgi --emperor /home/aakash/miniconda3/envs/TheLifeCycle/vassals/ --uid www-data --gid www-data
