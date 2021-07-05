@@ -400,3 +400,8 @@ p {
         visibility: hidden;
     }
 }
+
+.navbar-default {
+    margin: 0 !important;
+}
+
