@@ -1,5 +1,5 @@
 # TheLifeCycle 
-The purpose of this project is to develop a website that can distinguish between different types of garbage. The website will then return basic information about this piece of trash, such as if it is recyclable and how long it would take to decompose in nature. This will help users better understand how the trash they produce affects the world long after they throw it out.
+The purpose of this project is to develop a website that can distinguish between different types of garbage. The website will then return the sections of the images it believes to be trash. In addition, information such as how long various pieces of garbage would take to decompose in nature will be provided on the right side of the screen. This will help users better understand how the trash they produce affects the world long after they throw it out.
 
 
 
