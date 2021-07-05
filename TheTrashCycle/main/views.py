@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from TypeClassifier import classifier
+# from rest_framework.views import APIView
+# from rest_framework.response import Response
+# from rest_framework import status
+# from TypeClassifier import classifier
 from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
@@ -15,19 +15,19 @@ from django.core.files.storage import default_storage
 
 
 
-class call_model(APIView):
-
-    def get(self,request):
-        if request.method == 'POST':
-
-            # sentence is the query we want to get the prediction for
-            image = request.POST['filename']
-
-            # predict method used to get the prediction
-            response = classifier.get_pred(image, MainConfig.type_model)
-
-            # returning JSON response
-            return JsonResponse(response)
+# class call_model(APIView):
+#
+#     def get(self,request):
+#         if request.method == 'POST':
+#
+#             # sentence is the query we want to get the prediction for
+#             image = request.POST['filename']
+#
+#             # predict method used to get the prediction
+#             response = classifier.get_pred(image, MainConfig.type_model)
+#
+#             # returning JSON response
+#             return JsonResponse(response)
 
 
 def homepage(request):
