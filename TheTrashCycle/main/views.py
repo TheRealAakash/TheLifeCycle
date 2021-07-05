@@ -81,9 +81,10 @@ def get_started_submit(request):
         img = np.ascontiguousarray(image, dtype=np.uint8)
         frame, classes = getTrashFrame.renderFrame(np.array(img))
         skimage.io.imsave(file_url, frame)
+        hard_code_data = ["Recyclable ✓", "plastic"]
         return render(request=request, template_name="main/results.html",
-                      context={'file_name': file_name, 'file_path': file_url, 'garbage': [["Recyclable", "plastic bag"]], 'decomp_time': {"plastic bag": "4040"},
-                               'explanation': {"plastic bag": "because yes"}, "image": "file"})
+                      context={'file_name': file_name, 'file_path': file_url, 'garbage': [hard_code_data], 'decomp_time': garbage_time_dict,
+                               'explanation': garbage_dict, "image": "file"})
     else:
         return render(request=request, template_name="main/get-started.html")
 
