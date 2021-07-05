@@ -34,7 +34,7 @@ class InferenceConfig(config.__class__):
 config = InferenceConfig()
 config.display()
 
-DEVICE = "/gpu:0"  # /cpu:0 or /gpu:0
+DEVICE = "/cpu:0"  # /cpu:0 or /gpu:0
 dataset = trash.TrashDataset()
 dataset.load_trash(TRASH_DIR, "val")
 dataset.prepare()
