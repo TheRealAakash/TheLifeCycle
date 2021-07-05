@@ -395,13 +395,4 @@ p {
 }
 
 
-@media screen and (max-width: 600px) {
-    .dropdown {
-        visibility: hidden;
-    }
-}
-
-.navbar-default {
-    margin: 0 !important;
-}
 
