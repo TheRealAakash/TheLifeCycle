@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 
-model = tf.keras.models.load_model("")
+model = tf.keras.models.load_model("/home/aakash/Documents/Projects/Python/TheTrashCycle/TheTrashCycle/main/TrashInference/type-classifier3.model")
 model._make_predict_function()
 
 def get_pred(image):

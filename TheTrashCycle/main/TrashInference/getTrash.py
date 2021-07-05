@@ -42,7 +42,7 @@ print("Images: {}\nClasses: {}".format(len(dataset.image_ids), dataset.class_nam
 with tf.device(DEVICE):
     model = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config)
 
-weights_path = "D:\\Users\\Aakash\\Documents\\Programming\\Python\\Projects\\TheTrashCycle\\TheTrashCycle\\main\\TrashInference\\weights\\mask_rcnn_trash_0200_030519_large.h5"
+weights_path = "/home/aakash/Documents/Projects/Python/TheTrashCycle/TheTrashCycle/main/TrashInference/weights/mask_rcnn_trash_0200_030519_large.h5"
 model.load_weights(weights_path, by_name=True)
 model.keras_model._make_predict_function()
 
