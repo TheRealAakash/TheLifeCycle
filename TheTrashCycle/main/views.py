@@ -14,6 +14,7 @@ from django.conf import settings
 from django.core.files.storage import default_storage
 
 
+
 class call_model(APIView):
 
     def get(self,request):
@@ -53,14 +54,13 @@ def get_started_submit(request):
         file = request.FILES["imageFile"]
         file_name = default_storage.save(file.name, file)
         file_url = default_storage.path(file_name)
+
+        return render(request=request, template_name="main/results.html", context={'file_name':file_name, 'file_path':file_url, 'garbage':[["Recyclable","plastic bag"]], 'decomp_time':{"plastic bag":"4040"},'explanation':{"plastic bag":"because yes"}})
     else:
         return render(request=request, template_name="main/get-started.html")
-    image = plt.imread(r"D:\OneDrive\ByteKode Hackathon\TheTrashCycle\TheTrashCycle\main\static\graphics\trash.png")
-    render_class_list(image)
-    return render(request=request, template_name="main/results.html")
 
-def render_class_list(request, image):
-    # pred = classifier.get_pred(image)
-    # pred = classifier.get_class(pred)
-    pred = 0
-    return render(request,'main/results.html',{'garbage':[[pred, "paper"]]})
+
+# image = plt.imread(r"D:\OneDrive\ByteKode Hackathon\TheTrashCycle\TheTrashCycle\main\static\graphics\trash.png")
+# render_class_list(image)
+
+

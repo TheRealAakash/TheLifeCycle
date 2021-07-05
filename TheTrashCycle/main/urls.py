@@ -25,5 +25,5 @@ urlpatterns = [
     path("about", views.aboutpage, name="aboutpage"),
     path("get-started", views.get_started, name="get-started"),
     path("cardboard",views.cardboard, name="cardboard"),
-    path("submit", views.get_started_submit, name="submit")
+    path("submit", views.get_started_submit, name="results")
 ]
