@@ -81,7 +81,9 @@ body {
     overflow-y: scroll;
     padding-bottom: 20px;
 
-    background-color: #000080;
+    /*background-color: #000080;*/
+    background-color: #000000;
+
 }
 
 #explain {
