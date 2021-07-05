@@ -10,6 +10,8 @@ from django.conf import settings
 from django.core.files.storage import default_storage
 from .TrashInference import getTrashFrame
 import skimage.io
+import skimage.transform
+import skimage.color
 
 
 # class call_model(APIView):
@@ -77,10 +79,12 @@ def get_started_submit(request):
                              "shoes": "Materials like leather takes about 25 to 40 years, thread between 3 to 4 months and cotton about 1 to 5 months.",
                              "batteries": "Data Missing", "trash": "2-6 weeks"}
         image = skimage.io.imread(file_url)
-        skimage.io.imsave("D:\\Users\\Aakash\\Downloads\\img.png", image)
         img = np.ascontiguousarray(image, dtype=np.uint8)
-        frame, classes = getTrashFrame.renderFrame(np.array(img))
-        skimage.io.imsave(file_url, frame)
+        if len(img.shape) == 3:
+            if img.shape[2] == 4:
+                img = skimage.color.rgba2rgb(img)
+            frame, classes = getTrashFrame.renderFrame(np.array(img))
+            skimage.io.imsave(file_url, frame)
         hard_code_data = ["Recyclable ✓", "plastic"]
         return render(request=request, template_name="main/results.html",
                       context={'file_name': file_name, 'file_path': file_url, 'garbage': [hard_code_data], 'decomp_time': garbage_time_dict,
