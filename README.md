@@ -49,7 +49,7 @@ Research:
 > 
 > https://eridirect.com/blog/2015/11/how-long-does-it-take-electronic-waste-to-decompose/#:~:text=Flimsier%20metals%2C%20like%20tin%20can,500%20years%20to%20break%20down.
 > 
-> https://pelacase.com/blogs/news/does-plastic-degrade/#:~:text=Given%20the%20resistant%20nature%20of,to%20decompose%20in%20a%20landfill.
+> https://pelacase.com/blogs/news/does-plastic-degrade/#:~:text=Given%20the%20resistant%20nature%20of,to%20decompose%20in%20a%20landfill
 > 
 > https://www.goingzerowaste.com/blog/which-is-better-for-the-environment-glass-or-plastic/#:~:text=Last%20but%20not%20least%2C%20glass,glass%20that%20impact%20the%20environment.
 
