@@ -63,9 +63,20 @@ def get_started_submit(request):
             "shoes": "A simple way to combat textile's impact on the Earth is to recycle instead of throwing out clothing. ... The clothes and shoes we have collected has saved about 300-400 million pounds of CO2 from entering the atmosphere each year, which is the equivalent of taking 26,000-35,000 cars off the road.",
             "batteries": "Data Missing",
             "trash": "Ensuring that items get disposed of properly greatly helps the environment because yes."}
+
+        garbage_time_dict = {"paper": "2 to 6 weeks",
+                             "cardboard": " the majority of cardboard completely broken down within three months",
+                             "biological": "Varies but the smaller pieces take less time to break down. For tree leaves it can take 6 month to 1 year to fully decompose, while grass clippings only take a couple of weeks. Food and organic matter make for excellent compost!",
+                             "metal": "Flimsier metals, like tin can steel, take 50 years to decompose, and an aluminum can takes 200 to 500 years to break down.",
+                             "plastic": "Plastics often don't decompose but rather get broken into smaller and smaller fragments. Given the resistant nature of chemicals like PET, this gradual breakdown process can take years to complete. Plastic bottles, for instance, are estimated to require approximately 450 years to decompose in a landfill.",
+                             "green-glass": "one million years", "brown-glass": "one million years",
+                             "white-glass": "one million years",
+                             "clothes": "materials like leather takes about 25 to 40 years, thread between 3 to 4 months and cotton about 1 to 5 months.",
+                             "shoes": "Materials like leather takes about 25 to 40 years, thread between 3 to 4 months and cotton about 1 to 5 months.",
+                             "batteries": "Data Missing", "trash": "2-6 weeks"}
         return render(request=request, template_name="main/results.html",
                       context={'file_name': file_name, 'file_path': file_url, 'garbage': ["Recyclable", "Organic"],
-                               'decomp_time': {"Recyclable": "varies", "Organic": "4 weeks - 12 months"}, 'explanation':garbage_dict})
+                               'decomp_time': garbage_time_dict, 'explanation': garbage_dict})
     else:
         return render(request=request, template_name="main/get-started.html")
 
