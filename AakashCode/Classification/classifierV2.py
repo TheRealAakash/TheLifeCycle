@@ -94,6 +94,6 @@ if __name__ == '__main__':
     y_train_onehot = np_utils.to_categorical(y_train, 12)
     y_valid_onehot = np_utils.to_categorical(y_valid, 12)
 
-    model.fit(X_train / 255, y_train_onehot, steps_per_epoch=1000, epochs=epochs, initial_epoch=0, callbacks=[checkpoint, lr_reducer, earlystopping, tensorbord],
+    model.fit(X_train / 255, y_train_onehot, epochs=epochs, initial_epoch=0, callbacks=[checkpoint, lr_reducer, earlystopping, tensorbord],
               validation_data=(X_valid / 255, y_valid_onehot))
     model.save("trash.model")
