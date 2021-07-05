@@ -47,7 +47,6 @@ body {
 
 .split {
 
-    width: 49.99%;
 
     position: absolute;
     overflow-y: scroll;
@@ -59,6 +58,7 @@ body {
 
 /* Control the left side */
 .left {
+    width: 50%;
     padding-bottom: 120px;
 
     background-color: #3B7FF6;
@@ -74,11 +74,10 @@ body {
 
 /* Control the right side */
 .right {
+    width: 30%;
     text-align: center;
 
-    right: 0;
-    padding-right: 20px;
-    padding-left: 20px;
+    right: 10%;
     overflow-y: scroll;
     padding-bottom: 20px;
 
