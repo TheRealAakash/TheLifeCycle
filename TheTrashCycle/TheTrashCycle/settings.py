@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # added
     'main.apps.MainConfig',
     # 'main'
+
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
