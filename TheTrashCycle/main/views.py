@@ -78,7 +78,8 @@ def get_started_submit(request):
                              "batteries": "Data Missing", "trash": "2-6 weeks"}
         image = skimage.io.imread(file_url)
         skimage.io.imsave("D:\\Users\\Aakash\\Downloads\\img.png", image)
-        frame, classes = getTrashFrame.renderFrame(np.array(image))
+        img = np.ascontiguousarray(image, dtype=np.uint8)
+        frame, classes = getTrashFrame.renderFrame(np.array(img))
         skimage.io.imsave(file_url, frame)
         return render(request=request, template_name="main/results.html",
                       context={'file_name': file_name, 'file_path': file_url, 'garbage': [["Recyclable", "plastic bag"]], 'decomp_time': {"plastic bag": "4040"},
