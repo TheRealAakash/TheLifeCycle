@@ -6,46 +6,46 @@
 
 <head>
 
-	<link rel="stylesheet" href="{% static 'main/css/trash.css'%}">
+    <link rel="stylesheet" href="{% static 'main/css/trash.css'%}">
 
 </head>
 
-<body >
+<body>
 <!--<section class="i">-->
 <!--	<h1 id="cardboard">Cardboard</h1>-->
 <!--</section>-->
 
-	<section class="content" >
-		<div class="split left image" >
-			<div id="mar">
-				<h2 id="imgcaption">{{file_name}}</h2>
-				<img src="{{ media_root }}{{file_path}}" id="img">
-			</div>
-		</div>
-		<div class="split right">
-			{% for trash in garbage %}
-				<div>
-					<h1>
-						{{ trash.1 }}
-					</h1>
-				</div>
-				<div id="explain" style="color:white; font-size:40px;">
-					<h2 style="color:white; font-size:40px;">
-						{{ trash.0 }}
-					</h2>
+<section class="content">
+    <div class="split left image">
+        <div id="mar">
+            <h2 id="imgcaption">[Insert something not stupid here]</h2>
+            <img src="media/{{file_name}}" id="img">
+        </div>
+    </div>
+    <div class="split right">
+        {% for trash in garbage %}
+        <div>
+            <h1>
+                {{ trash.1 }}
+            </h1>
+        </div>
+        <div id="explain" style="color:white; font-size:40px;">
+            <h2 style="color:white; font-size:40px;">
+                {{ trash.0 }}
+            </h2>
 
-					<h2 style="color:white; font-size:20px; margin-top:40px;">
-						{{decomp_time.trash.1}}
-					</h2>
+            <h2 style="color:white; font-size:20px; margin-top:40px;">
+                {{decomp_time.trash.1}}
+            </h2>
 
-					<h2 style="color:white;font-size:20px; line-height:2;margin-top:50px;">
-						{{explanation.trash.1}}
-					</h2>
-				</div>
-			{% endfor %}
-		</div>
+            <h2 style="color:white;font-size:20px; line-height:2;margin-top:50px;">
+                {{explanation.trash.1}}
+            </h2>
+        </div>
+        {% endfor %}
+    </div>
 
-	</section>
+</section>
 
 </body>
 
